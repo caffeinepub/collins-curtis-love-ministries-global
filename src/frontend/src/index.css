@@ -1,0 +1,80 @@
+@import url("https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Inter:wght@300;400;500;600;700&display=swap");
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  :root {
+    --navy: #102a4b;
+    --gold: #c7a24a;
+    --cream: #f4efe6;
+    --beige: #e8ddcb;
+    --border-taupe: #d7cfbf;
+    --radius: 0.5rem;
+    --background: 1 0 0;
+    --foreground: 0.145 0 0;
+    --card: 1 0 0;
+    --card-foreground: 0.145 0 0;
+    --popover: 1 0 0;
+    --popover-foreground: 0.145 0 0;
+    --primary: 0.205 0 0;
+    --primary-foreground: 0.985 0 0;
+    --secondary: 0.97 0 0;
+    --secondary-foreground: 0.205 0 0;
+    --muted: 0.97 0 0;
+    --muted-foreground: 0.556 0 0;
+    --accent: 0.97 0 0;
+    --accent-foreground: 0.205 0 0;
+    --destructive: 0.577 0.245 27.325;
+    --destructive-foreground: 0.985 0 0;
+    --border: 0.922 0 0;
+    --input: 0.922 0 0;
+    --ring: 0.708 0 0;
+  }
+
+  * {
+    @apply border-border;
+  }
+  body {
+    @apply bg-background text-foreground;
+    font-family: "Inter", sans-serif;
+  }
+
+  .font-serif {
+    font-family: "Playfair Display", Georgia, serif;
+  }
+}
+
+@layer utilities {
+  .bg-navy {
+    background-color: #102a4b;
+  }
+  .bg-gold {
+    background-color: #c7a24a;
+  }
+  .bg-cream {
+    background-color: #f4efe6;
+  }
+  .bg-beige {
+    background-color: #e8ddcb;
+  }
+  .text-navy {
+    color: #102a4b;
+  }
+  .text-gold {
+    color: #c7a24a;
+  }
+  .border-gold {
+    border-color: #c7a24a;
+  }
+  .border-taupe {
+    border-color: #d7cfbf;
+  }
+  .hover\:bg-gold-dark:hover {
+    background-color: #b08d3a;
+  }
+  .hover\:bg-navy-dark:hover {
+    background-color: #0a1f38;
+  }
+}
